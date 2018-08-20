@@ -5,9 +5,13 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-require('./bootstrap');
+ import VueAxios from 'vue-axios';
+ import axios from 'axios';
 
-window.Vue = require('vue');
+ require('./bootstrap');
+
+ window.Vue = require('vue');
+ Vue.use(VueAxios, axios);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -16,6 +20,8 @@ window.Vue = require('vue');
  */
 
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
+Vue.component('coin-add-component', require('./components/AddComponent.vue'));
+Vue.component('chart-component', require('./components/ChartComponent.vue'));
 
 const app = new Vue({
     el: '#app'

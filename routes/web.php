@@ -12,5 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('chart');
 });
+Route::post('/coins', 'CoinController@store');
+Route::get('/coins', 'CoinController@index');
