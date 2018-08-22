@@ -12,7 +12,13 @@
 */
 
 Route::get('/', function () {
+    return view('home');
+});
+Route::get('/chart', function () {
     return view('chart');
+});
+Route::get('/datatable', function () {
+    return view('datatable');
 });
 Route::post('/coins', 'CoinController@store');
 Route::get('/coins', 'CoinController@index');
