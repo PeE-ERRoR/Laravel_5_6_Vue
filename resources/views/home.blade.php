@@ -46,6 +46,8 @@
               <a href="/" class="list-group-item list-group-item-action list-group-item-info">Home</a>
               <a href="/chart" class="list-group-item list-group-item-action list-group-item-success">Chart</a>
               <a href="/datatable" class="list-group-item list-group-item-action list-group-item-info">Datatable</a>
+              <a href="/content" class="list-group-item list-group-item-action list-group-item-success">Content</a>
+              <a href="/event" class="list-group-item list-group-item-action list-group-item-info6">Event</a>
             </div>
           </div>
         </div>

@@ -14,7 +14,7 @@ class CoinController extends Controller
                   ->get();
       return response()->json($coins);
   }
-
+  
   public function store(Request $request)
   {
       $coin = new Coin;

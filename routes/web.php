@@ -20,5 +20,11 @@ Route::get('/chart', function () {
 Route::get('/datatable', function () {
     return view('datatable');
 });
+Route::get('/content', function () {
+    return view('content');
+});
+Route::get('/event', function () {
+    return view('event');
+});
 Route::post('/coins', 'CoinController@store');
 Route::get('/coins', 'CoinController@index');

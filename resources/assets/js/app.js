@@ -7,6 +7,9 @@
 
  import VueAxios from 'vue-axios';
  import axios from 'axios';
+ // import Toastr from './components/enso/bulma/toastr';
+ // import fontawesome from '@fortawesome/fontawesome';
+ // import FontAwesomeIcon from '@fortawesome/vue-fontawesome';
 
  require('./bootstrap');
 
@@ -22,6 +25,9 @@
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
 Vue.component('coin-add-component', require('./components/AddComponent.vue'));
 Vue.component('chart-component', require('./components/ChartComponent.vue'));
+Vue.component('datatable-component', require('./components/DatatableComponent.vue'));
+Vue.component('content-component', require('./components/ContentComponent.vue'));
+Vue.component('event-component', require('./components/EventComponent.vue'));
 
 const app = new Vue({
     el: '#app'
